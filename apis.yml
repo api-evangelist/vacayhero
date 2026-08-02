@@ -1,7 +1,23 @@
 aid: vacayhero
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vacayhero.png
 name: VacayHero
-description: VacayHero is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'VacayHero (branded VaycayHero) was a vacation rental marketplace backed by a16z that
+  offered professionally managed vacation rental homes with hotel-style guest service. The brand was
+  absorbed by RedAwning: vacayhero.com now permanently redirects (301) to RedAwning''s VaycayHero brand
+  page, which folds the VaycayHero properties into RedAwning''s collection of 100,000+ instantly bookable
+  vacation rentals in over 10,000 destinations. VacayHero no longer operates an independent website,
+  developer program, or public API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/vacayhero/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +27,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Travel
+- Hospitality
+- Vacation Rentals
+- Marketplace
+- Venture Backed
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/vacayhero-domain-security.yml
+- type: Website
+  url: https://vacayhero.com
+- type: Redirect
+  url: https://www.redawning.com/brands/vaycayhero
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
